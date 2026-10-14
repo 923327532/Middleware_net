@@ -1,8 +1,60 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+@{
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- Hero Section -->
+<section class="hero-section">
+    <h1>Bienvenido al Proyecto</h1>
+    <p>
+        Plataforma de demostración de <strong>Middleware en ASP.NET Core</strong>.
+        Explora el manejo de peticiones, pipelines y componentes intermedios.
+    </p>
+    <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a asp-area="" asp-controller="Home" asp-action="Privacy" class="btn btn-outline-light btn-lg px-4">
+            Ver Privacidad
+        </a>
+    </div>
+</section>
+
+<!-- Info Cards -->
+<div class="row g-4 mt-2">
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-header">
+                🔗 Middleware Pipeline
+            </div>
+            <div class="card-body" style="padding: 1.5rem;">
+                <p style="color: #075985; line-height: 1.7; margin: 0;">
+                    Comprende cómo ASP.NET Core procesa las solicitudes HTTP
+                    a través de componentes encadenados.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-header">
+                ⚙️ Configuración
+            </div>
+            <div class="card-body" style="padding: 1.5rem;">
+                <p style="color: #075985; line-height: 1.7; margin: 0;">
+                    Gestión de <code>appsettings.json</code>, variables de entorno
+                    y dependencias mediante inyección de dependencias.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-header">
+                🛡️ Seguridad
+            </div>
+            <div class="card-body" style="padding: 1.5rem;">
+                <p style="color: #075985; line-height: 1.7; margin: 0;">
+                    Manejo de autenticación, autorización y políticas de
+                    acceso con middleware personalizado.
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
